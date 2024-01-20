@@ -1,0 +1,95 @@
+/* written by Boonlert Randy (74297) for Group 6 TMI4033 Project */
+* {
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #EEEEEE;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+h1 {
+  color: #222831;
+  margin-bottom: 0;
+}
+
+#group-name {
+  margin: 0;
+  margin-top:.5em;
+  margin-bottom: 2em;
+}
+.alert {
+  min-width: 80%;
+  min-height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF9B9B;
+  border: none;
+  border-radius: .5em;
+  color: #820300;
+}
+
+#p_form {
+  min-width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+#p_form > label {
+}
+
+#p_form > input {
+  min-height: 2.5em;
+  border: 1px #222831 solid;
+  border-radius: .25em;
+  margin-bottom: 10px;
+  padding-left: .5em
+}
+
+#p_form > input::placeholder {
+}
+
+#p_form > #s_btn {
+  cursor: pointer;
+  min-width: 50%;
+  min-height: 3em;
+  border-radius: 1em;
+  border: none; 
+  background-color: #82CD47;
+  align-self: center;
+}
+
+#p_form > #s_btn:hover {
+  background-color: #54B435;
+}
+
+#info {
+  display: flex;
+  flex-flow: column;
+  background-color: #B4D4FF;
+  margin-top: 2em;
+  border: none;
+  border-radius: .75em;
+}
+
+#info > .info-item {
+  display: flex;
+  margin: 0 2em;
+}
+
+#info > .info-item > .r_name {
+  min-width: 8em;
+  font-weight: bold;
+}
+
+#info > .info-item > .r_content > span {
+  font-weight: bold;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}

@@ -1,0 +1,61 @@
+<!-- written by Boonlert Randy (74297) for Group 6 TMI4033 Project -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Deep Collaborative Recommendation System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+    <style>
+</style>
+    </style>
+  </head>
+  <body>
+    {% with err_msg = get_flashed_messages(category_filter=["error"]) %}
+      {% if err_msg %}
+        {% for msg in err_msg %}
+          <div class='alert'>
+            <p>{{msg}}</p>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <h1>Deep Collaborative Recommendation System</h1>
+    <p id="group-name">TMI4033 Group 6</p>
+    <form id="p_form" method='POST'>
+      <label for="u_id">User ID</label>
+      <input id="u_id" type="number" name="u_id" value="{{ request.form['u_id'] }}" min="1" max="2649430" placeholder="1 to 2649430">
+      <label for="m_id">Movie ID</label>
+      <input id="m_id" type="number" name="m_id" value="{{ request.form['m_id'] }}" min="1" max="10" placeholder="1 to 10">
+      <label for="date">Date</label>
+      <input id="date" type="date" name="date" value="{{ request.form['date'] }}" >
+      <button id="s_btn" type="submit">Submit</button>
+    </form>
+    {% with p_result = get_flashed_messages(category_filter=["result"]) %}
+      {% if p_result %}
+        {% for msg in p_result %}
+          <div id="info">
+            <div class="info-item">
+              <p class="r_name" >User ID</p>
+              <p class="r_content"><span>: </span>{{msg['user_id']}}</p>
+            </div>
+            <div class="info-item">
+              <p class="r_name">Movie</p>
+              <p class="r_content"><span>: </span>{{msg['movie']}}</p>
+            </div>
+            <div class="info-item">
+              <p class="r_name">Date</p>
+              <p class="r_content"><span>: </span>{{msg['date']}}</p>
+            </div>
+            <div class="info-item">
+              <p class="r_name">Rating</p>
+              <p class="r_content"><span>: </span>{{msg['rating']}}</p>
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+  </body>
+</html>

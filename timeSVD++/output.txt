@@ -1,0 +1,11 @@
+User Id: 1046323
+item Id: 1
+day after epoch: 13136
+average rating: 3.27303
+Bu: 0
+Bi: 0.267786
+Bi_Bin: 0.225881
+CalBin: 29
+Alpha_u: 0
+Bu_t: 0
+predicted score: 3.78254

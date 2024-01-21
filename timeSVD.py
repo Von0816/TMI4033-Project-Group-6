@@ -24,7 +24,6 @@ FILE_Qi = open(CONST_Dir + "/Qi.txt")
 FILE_Pu = open(CONST_Dir + "/Pu.txt")
 FILE_sumMW = open(CONST_Dir + "/sumMW.txt")
 FILE_Sz = open(CONST_Dir + "/Sz.txt")
-FILE_test = open("test.txt")
 
 def sign(n):
     if n > 0:

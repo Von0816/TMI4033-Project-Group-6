@@ -8,7 +8,7 @@ the timeSVD++ model is pre-trained on 20k+ of ratings data.
 1. download the required files from the provided link  
 2. extract the file into the root folder of the project  
 
-your folder structer should look like this:  
+your folder structure should look like this:  
 project folder  
 ├───netflix_prize_data  
 ├───saved_params  

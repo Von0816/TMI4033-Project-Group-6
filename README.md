@@ -9,11 +9,11 @@ the timeSVD++ model is pre-trained on 20k+ of ratings data.
 2. extract the file into the root folder of the project
 
 your folder structer should look like this:
-project folder
-├───netflix_prize_data
-├───saved_params
-├───static
-├───templates
+project folder  
+├───netflix_prize_data  
+├───saved_params  
+├───static  
+├───templates  
 └───timeSVD++
    
 ====================== pre-training ======================

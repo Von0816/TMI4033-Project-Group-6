@@ -22,5 +22,4 @@ project folder
 
 ====================== How to Run ======================  
 1. install flask using pip  
-2. run python  
-3. run flask using "flask run" in python  
+2. run flask in terminal
